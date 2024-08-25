@@ -1,0 +1,19 @@
+<div class="modal-header">
+  <h4 class="modal-title">Details</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <div *ngFor="let shape of shapes" class="shape-item">
+
+    <div class="shape-container text-center">
+      <app-shape [shape]="shape"></app-shape>
+    </div>
+    <div class="shape-details mt-3">
+      <p><strong>Type:</strong> {{ shape?.type }}</p>
+      <p><strong>Number:</strong> {{ shape?.number }}</p>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+</div>

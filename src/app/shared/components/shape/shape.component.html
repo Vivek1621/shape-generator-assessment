@@ -1,0 +1,8 @@
+<div class="card-container" >
+  <div class="card shape-card"  [ngClass]="{ square: isSquare(), circle: isCircle() }" 
+   [ngStyle]="{ 'background-color': getColor(), 'border-radius': getBorderRadius() }">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{ shape.name }}</h5>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+$modal-bg: #fff;
+$modal-border: #ccc;
+$modal-header-bg: #f1f1f1;
+$close-button-color: #444;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $modal-header-bg;
+    padding: 10px;
+    border-bottom: 1px solid $modal-border;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .close-button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: $close-button-color;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: darken($close-button-color, 10%);
+      }
+    }
+
+}
